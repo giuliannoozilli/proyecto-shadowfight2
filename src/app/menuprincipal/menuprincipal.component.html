@@ -7,11 +7,22 @@
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="(isHandset$ | async) === false"
   >
-    <mat-toolbar color="primary">Menu</mat-toolbar>
+    <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="inicio">inicio</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item routerLink="inicio">Inicio</a>
+      <a mat-list-item routerLink="galeria">Galeria</a>
+      <mat-expansion-panel
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+      >
+        <a mat-list-item routerlink="cuchillas">Cuchillas</a>
+        <a mat-list-item routerlink="sai">Sai</a>
+        <a mat-list-item routerlink="batonsacero">Batons Acero</a>
+        <a mat-list-item routerlink="espadaninja">Espada Ninja</a>
+        <a mat-list-item routerlink="machetes">Machetes</a>
+        <a mat-list-item routerlink="dagas">Dagas</a>
+        <a mat-list-item routerlink="segadorasangrante">Segadora Sangrante</a>
+      </mat-expansion-panel>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -26,7 +37,7 @@
       </button>
       <span>shadowfight2</span>
     </mat-toolbar>
-    <!-- Add Content Here helooworld!-->
+    <!-- Add Content Here-->
     <ng-content></ng-content>
   </mat-sidenav-content>
 </mat-sidenav-container>
