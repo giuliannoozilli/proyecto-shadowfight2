@@ -1,0 +1,12 @@
+table {
+  width: 100%;
+}
+img {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+.armasgif {
+  width: 40%;
+}
