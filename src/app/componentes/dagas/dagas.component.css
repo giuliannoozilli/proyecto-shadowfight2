@@ -1,0 +1,19 @@
+table {
+  width: 100%;
+}
+.weapon {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+img {
+  width: 30%;
+}
+.armasgif {
+  width: 40%;
+}
+h1 {
+  text-align: center;
+  font-weight: bold;
+}

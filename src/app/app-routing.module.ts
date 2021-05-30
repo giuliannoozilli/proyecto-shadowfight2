@@ -1,3 +1,4 @@
+import { PersonajesComponent } from './componentes/personajes/personajes.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -45,6 +46,9 @@ const routes: Routes = [
   },
   {
     path: 'rutasegsan', component: SegadorasangranteComponent
+  },
+  {
+    path: 'rutapers', component: PersonajesComponent
   }
 ];
 

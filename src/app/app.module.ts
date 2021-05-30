@@ -1,4 +1,6 @@
 import { NgModule } from '@angular/core';
+
+
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -20,7 +22,7 @@ import { EspadaninjaComponent } from './componentes/espadaninja/espadaninja.comp
 import { MachetesComponent } from './componentes/machetes/machetes.component';
 import { DagasComponent } from './componentes/dagas/dagas.component';
 import { SegadorasangranteComponent } from './componentes/segadorasangrante/segadorasangrante.component';
-
+import { PersonajesComponent } from './componentes/personajes/personajes.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,7 @@ import { SegadorasangranteComponent } from './componentes/segadorasangrante/sega
     MachetesComponent,
     DagasComponent,
     SegadorasangranteComponent,
+    PersonajesComponent,
   ],
   imports: [
     BrowserModule,
