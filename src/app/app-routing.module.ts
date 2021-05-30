@@ -4,6 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { GaleriaComponent } from './componentes/galeria/galeria.component';
 import { CuchillasComponent } from './componentes/cuchillas/cuchillas.component';
+import { NudillosComponent } from './componentes/nudillos/nudillos.component';
+import { SaiComponent } from './componentes/sai/sai.component';
+import { BatonsaceroComponent } from './componentes/batonsacero/batonsacero.component';
+import { DagasComponent } from './componentes/dagas/dagas.component';
+import { EspadaninjaComponent } from './componentes/espadaninja/espadaninja.component';
+import { MachetesComponent } from './componentes/machetes/machetes.component';
+import { SegadorasangranteComponent } from './componentes/segadorasangrante/segadorasangrante.component';
 
 
 
@@ -18,15 +25,6 @@ const routes: Routes = [
   {
     path: 'rutacuch', component: CuchillasComponent
   },
-];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
-
-/*
   {
     path: 'rutanud', component: NudillosComponent
   },
@@ -48,11 +46,10 @@ export class AppRoutingModule { }
   {
     path: 'rutasegsan', component: SegadorasangranteComponent
   }
+];
 
-  <a mat-list-item routerlink="rutasai">Sai</a>
-  <a mat-list-item routerlink="rutabatac">Batons Acero</a>
-  <a mat-list-item routerlink="rutaespnin">Espada Ninja</a>
-  <a mat-list-item routerlink="rutamach">Machetes</a>
-  <a mat-list-item routerlink="rutadag">Dagas</a>
-  <a mat-list-item routerlink="rutasegsan">Segadora Sangrante</a>
-*/
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }

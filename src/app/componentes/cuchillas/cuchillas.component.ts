@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 export interface PeriodicElement {
   imageUrl: string;
   name: string;
-  weight;
+  weight: any;
   symbol: string;
 }
 
@@ -17,7 +17,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   { imageUrl: 'assets/armas-acto1/cuchillas/cuch-slash-rotat.gif', name: 'Cuchillas Slash Rotativa', weight: 12, symbol: 'atras + puño' },
   // tslint:disable-next-line: max-line-length
   { imageUrl: 'assets/armas-acto1/cuchillas/cuch-upper.gif', name: 'Cuchillas Slash Hacia Arriba', weight: 15, symbol: 'arriba + puño' },
-  { imageUrl: 'assets/armas-acto1/cuchillas/cuch-slash-bajon.gif', name: 'Cuhcillas Slash Bajon', weight: 12, symbol: 'abajo + puño' },
+  { imageUrl: 'assets/armas-acto1/cuchillas/cuch-slash-bajon.gif', name: 'Cuchillas Slash Bajon', weight: 12, symbol: 'abajo + puño' },
 ];
 
 @Component({
